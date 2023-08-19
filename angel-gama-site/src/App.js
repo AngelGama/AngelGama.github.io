@@ -1,35 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavBar } from './components/NavBar';
+import { Banner } from './components/Banner';
+import { Skills } from './components/Skills';
+import { Projects } from './components/Projects';
+import { Footer } from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to my website! I'm currently working on it, so please check back later for more content.
-        </p>
-        
-        <p>
-          For now, visit my LinkedIn or Google Developer Profile :D
-        </p>
-        <a
-          className="App-link"
-          href="https://www.linkedin.com/in/angel-gama/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-        <a
-          className="App-link"
-          href="https://developers.google.com/profile/u/Angel_Gama"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Google Developer Profile
-        </a>
-      </header>
+      <NavBar />
+      <Banner />
+      <Skills />
+      <Projects />
+      <Footer />
     </div>
   );
 }

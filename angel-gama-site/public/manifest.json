@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Angel Gama",
+  "name": "Angel Garfias Portfolio",
+  "description": "Welcome to my portfolio app! I'm Angel Garfias, a passionate developer on a journey to create remarkable digital experiences. This app is a reflection of my dedication to the craft of software development. 🚀 \nAs you explore this app, you'll discover a collection of my projects, each crafted with care and innovation. From web development to mobile apps, I've poured my heart and skills into these creations, aiming to solve real-world challenges and bring ideas to life. \nWith a strong foundation in programming languages like Kotlin, C#, JavaScript, Python, and more, I've built projects that demonstrate my proficiency in creating interactive websites, intuitive user interfaces, efficient RT3D systems and Android apps",
   "icons": [
     {
       "src": "favicon.ico",

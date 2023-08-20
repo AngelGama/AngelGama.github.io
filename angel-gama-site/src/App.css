@@ -8,25 +8,26 @@
   --margin-unit: 4vw;
 
   /* Base Colors */
-  --primary: #6F2DBD;
-  --secondary: #615FCB;
-  --tertiary: #5390D9;
-  --quaternary: #2B67B2;
-  --quinary: #023e8a;
+  --primary: #280e2c;
+  --secondary: #400b5a;
+  --tertiary: #270d2b;
+  --quaternary: #0d1440;
+  --quinary: #1b0e2e;
   --text-color: #FFFFFF;
+  --hack-terminal: rgb(0, 255, 0, 0.75);
 
   /* Gradients */
 
-  --color-gradient: linear-gradient(90deg,
-      var(--primary),
-      var(--secondary),
-      var(--tertiary),
-      var(--quaternary),
-      var(--quinary));
+  --color-gradient: linear-gradient(90deg, var(--primary), var(--secondary), var(--tertiary), var(--quaternary), var(--quinary));
+  --card-gradient: linear-gradient(90deg, rgba(128, 128, 128, 0.2), rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.2));
 
-  --dark-gradient: linear-gradient(90deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25));
-  --light-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.25));
+}
 
+@media (max-width: 767px) {
+  :root {
+    --color-gradient: linear-gradient(90deg, var(--primary), var(--secondary), var(--quaternary));
+    --card-gradient: linear-gradient(90deg, rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.2), rgba(128, 128, 128, 0.3));
+  }
 }
 
 /* #endregion */
@@ -67,12 +68,13 @@ h6 {
 h2 {
   font-family: "Monospace", monospace !important;
   font-weight: bold !important;
-  color: rgba(0, 255, 0, 1) !important;
+  color: var(--hack-terminal) !important;
 }
 
 h5 {
   font-family: "Monospace", monospace !important;
   font-weight: bold !important;
+  padding-top: 10px;
 }
 
 p {
@@ -145,7 +147,8 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: rgba(232, 232, 232, 0.5);
+  /* background: rgba(232, 232, 232, 0.5); */
+  background: var(--card-gradient);
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
@@ -248,7 +251,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin: 150px var(--margin-unit) var(--margin-unit) var(--margin-unit);
-  background: var(--dark-gradient);
+  background: var(--card-gradient);
   border-radius: var(--rounding-unit);
 }
 
@@ -257,7 +260,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 50px auto;
   font-family: "Monospace", monospace;
   font-weight: bold;
-  color: rgba(0, 255, 0, 1);
+  color: var(--hack-terminal);
   background: black;
   letter-spacing: 0.8px;
   padding: 12px;
@@ -269,7 +272,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner .wrap {
   font-family: "Monospace", monospace;
   font-weight: normal;
-  color: rgba(0, 255, 0, 1);
+  color: var(--hack-terminal);
 }
 
 .banner h1 {
@@ -296,7 +299,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 50px auto !important;
   font-family: "Monospace", monospace;
   font-weight: bold;
-  color: rgba(0, 255, 0, 1);
+  color: var(--hack-terminal);
   background: black;
   letter-spacing: 0.8px;
   padding: 12px;
@@ -372,7 +375,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill {
   margin: var(--margin-unit);
-  background: var(--dark-gradient);
+  background: var(--card-gradient);
   border-radius: var(--rounding-unit);
 }
 
@@ -443,7 +446,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   margin: var(--margin-unit);
   position: relative;
-  background: var(--dark-gradient);
+  background: var(--card-gradient);
   border-radius: var(--rounding-unit);
 }
 
@@ -621,8 +624,7 @@ p.my-name-footer {
   letter-spacing: 0.8px;
   font-family: "Monospace", monospace;
   font-weight: bold;
-  color: rgba(0, 255, 0, 0.90);
-  background: rgba(0, 0, 0, 0.5);
+  color: var(--hack-terminal);
   border-radius: 15px;
 }
 

@@ -56,17 +56,18 @@ export const Projects = () => {
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Tab One</Nav.Link>
+                                    <Nav.Link eventKey="first">Projects</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Tab Two</Nav.Link>
+                                    <Nav.Link eventKey="second">Experience</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third" >Tab three</Nav.Link>
+                                    <Nav.Link eventKey="third" >Certifications</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
+                                    <p>🚧 Disclaimer: Under Construction! 🛠️</p>
                                     <Row>
                                         {
                                             projects.map((project, index) => {
@@ -80,8 +81,14 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="second">Some second</Tab.Pane>
-                                <Tab.Pane eventKey="third">Some third</Tab.Pane>
+                                <Tab.Pane eventKey="second">
+                                    <p>🚧 Disclaimer: Under Construction! 🛠️</p>
+                                    <img src={imagePaths.logo} className="App-logo" alt="logo" />
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="third">
+                                    <p>🚧 Disclaimer: Under Construction! 🛠️</p>
+                                    <img src={imagePaths.logo} className="App-logo" alt="logo" />
+                                </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>

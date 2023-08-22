@@ -8,9 +8,9 @@ export const Footer = () => {
             <Container>
                 <Row className="align-item-center">
                     <Col sm={6}>
-                        <p className="my-name-footer">&lt;Angel.Garfias/&gt;</p>
+                        <img src={imagePaths.mylogo} alt="Angel Garfias Logo" className="footer-logo" />
                     </Col>
-                    <Col sm={6} className="text-center text-sm-end">
+                    <Col sm={6} className="text-center text-sm-end social-footer">
                         <div className="social-icon">
                             <a href={socialLinks.linkedin}><img src={imagePaths.inlogo} alt="LinkedIn" /></a>
                             <a href={socialLinks.github}><img src={imagePaths.ghlogo} alt="GitHub" /></a>

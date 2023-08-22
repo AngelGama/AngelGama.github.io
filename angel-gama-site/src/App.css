@@ -107,7 +107,7 @@ nav.navbar a.navbar-brand {
 .my-icon {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .my-name {
@@ -147,7 +147,6 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  /* background: rgba(232, 232, 232, 0.5); */
   background: var(--card-gradient);
   display: inline-flex;
   border-radius: 50%;
@@ -682,18 +681,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 14px;
   color: var(--text-color);
   letter-spacing: 0.5px;
-  margin-top: 20px;
+  padding-top: 40px;
   font-family: "Monospace", monospace;
   font-weight: bold;
 }
 
-p.my-name-footer {
-  font-size: 36px;
-  letter-spacing: 0.8px;
-  font-family: "Monospace", monospace;
-  font-weight: bold;
-  color: var(--hack-terminal);
-  border-radius: 15px;
+@media (max-width: 768px) {
+  .footer .footer-logo {
+    padding-bottom: 20px;
+  }
 }
 
 /* #endregion */

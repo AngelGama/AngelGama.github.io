@@ -71,7 +71,7 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-skills" src={imagePaths.logo} alt="" />
+            <img className="background-image-skills" src={imagePaths.reactlogo} alt="" />
         </section >
     )
 

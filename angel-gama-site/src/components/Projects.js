@@ -83,11 +83,11 @@ export const Projects = () => {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
                                     <p>🚧 Disclaimer: Under Construction! 🛠️</p>
-                                    <img src={imagePaths.logo} className="App-logo" alt="logo" />
+                                    <img src={imagePaths.reactlogo} className="App-logo" alt="React logo" />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
                                     <p>🚧 Disclaimer: Under Construction! 🛠️</p>
-                                    <img src={imagePaths.logo} className="App-logo" alt="logo" />
+                                    <img src={imagePaths.reactlogo} className="App-logo" alt="React logo" />
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>

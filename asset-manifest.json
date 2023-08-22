@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec35343d.css",
-    "main.js": "/static/js/main.4dc7dcd8.js",
+    "main.css": "/static/css/main.403f42bb.css",
+    "main.js": "/static/js/main.bb3b9479.js",
     "static/js/787.824befec.chunk.js": "/static/js/787.824befec.chunk.js",
     "static/media/gdlogo.svg": "/static/media/gdlogo.697893b9f1f101af2d4b36c3fd72217c.svg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -10,15 +10,16 @@
     "static/media/android.svg": "/static/media/android.40c7a98ce8f373070b9b8dc32e4c6cfa.svg",
     "static/media/inlogo.svg": "/static/media/inlogo.ed70f99826ad2caada98aa2a53f9d3fd.svg",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/reactlogo.svg": "/static/media/reactlogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/mylogo.svg": "/static/media/mylogo.d051de173dd99e56435c85c452f559a7.svg",
     "static/media/ghlogo.svg": "/static/media/ghlogo.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/index.html",
-    "main.ec35343d.css.map": "/static/css/main.ec35343d.css.map",
-    "main.4dc7dcd8.js.map": "/static/js/main.4dc7dcd8.js.map",
+    "main.403f42bb.css.map": "/static/css/main.403f42bb.css.map",
+    "main.bb3b9479.js.map": "/static/js/main.bb3b9479.js.map",
     "787.824befec.chunk.js.map": "/static/js/787.824befec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec35343d.css",
-    "static/js/main.4dc7dcd8.js"
+    "static/css/main.403f42bb.css",
+    "static/js/main.bb3b9479.js"
   ]
 }

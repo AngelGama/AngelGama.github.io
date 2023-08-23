@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { imagePaths } from '../constants/imagePaths';
 import { socialLinks } from '../constants/socialLinks';
+import { Toggle } from './Toggle';
 
 export const NavBar = () => {
 
@@ -46,6 +47,9 @@ export const NavBar = () => {
                         <Nav.Link href="#skills" className={activaLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                         <Nav.Link href="#projects" className={activaLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     </Nav>
+                    <span className='navbar-toggle'>
+                        <Toggle />
+                    </span>
                     <span className="navbar-text">
                         <div className="social-icon">
                             <a href={socialLinks.linkedin}><img src={imagePaths.inlogo} alt="LinkedIn" /></a>

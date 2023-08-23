@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.403f42bb.css",
-    "main.js": "/static/js/main.bb3b9479.js",
+    "main.css": "/static/css/main.4472bf43.css",
+    "main.js": "/static/js/main.2c8e4687.js",
     "static/js/787.824befec.chunk.js": "/static/js/787.824befec.chunk.js",
     "static/media/gdlogo.svg": "/static/media/gdlogo.697893b9f1f101af2d4b36c3fd72217c.svg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -12,14 +12,16 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/reactlogo.svg": "/static/media/reactlogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/mylogo.svg": "/static/media/mylogo.d051de173dd99e56435c85c452f559a7.svg",
+    "static/media/moon.svg": "/static/media/moon.23738d343fe0761bb306f7575e053211.svg",
     "static/media/ghlogo.svg": "/static/media/ghlogo.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "static/media/sun.svg": "/static/media/sun.2920a62afd2ea0fe17a6f76991b7b9f2.svg",
     "index.html": "/index.html",
-    "main.403f42bb.css.map": "/static/css/main.403f42bb.css.map",
-    "main.bb3b9479.js.map": "/static/js/main.bb3b9479.js.map",
+    "main.4472bf43.css.map": "/static/css/main.4472bf43.css.map",
+    "main.2c8e4687.js.map": "/static/js/main.2c8e4687.js.map",
     "787.824befec.chunk.js.map": "/static/js/787.824befec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.403f42bb.css",
-    "static/js/main.bb3b9479.js"
+    "static/css/main.4472bf43.css",
+    "static/js/main.2c8e4687.js"
   ]
 }

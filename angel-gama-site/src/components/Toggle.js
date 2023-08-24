@@ -17,6 +17,7 @@ export const Toggle = () => {
     const selectedTheme = localStorage.getItem('selectedTheme');
 
     if (selectedTheme === "light") setLightMode();
+    else setDarkMode();
 
     const toggleTheme = e => {
         if (e.target.checked) setDarkMode();

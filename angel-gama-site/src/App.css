@@ -155,12 +155,15 @@ nav.navbar a.navbar-brand {
 .my-name {
   font-family: "Monospace", monospace;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.5rem;
   margin-left: 10px;
-  margin-bottom: 0;
   opacity: 0.9;
   display: inline-block;
   color: var(--on-surface);
+
+  @media (max-width: 767px) {
+    font-size: 100%;
+  }
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -393,7 +396,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler:before {
 .banner h1 {
   font-weight: bold;
   letter-spacing: 0.8px;
-  line-height: 1;
   margin-bottom: 20px;
   display: block;
   text-align: start;
@@ -413,8 +415,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler:before {
   margin: 50px auto !important;
   font-family: "Monospace", monospace;
   font-weight: bold;
-  color: var(--inverse-primary);
-  background: var(--inverse-surface);
+  color: var(--on-primary-container);
+  background: var(--primary-container);
   letter-spacing: 0.8px;
   padding: 12px;
   border: 1px solid var(--outline);

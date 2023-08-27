@@ -72,13 +72,13 @@ export const Banner = () => {
                     </Col>
                     <Col xs={12} md={2} xl={2}>
                         <div className="banner-img">
-                            <img src={imagePaths.profile} alt="HeaderImage" />
+                            <img src={imagePaths.profile} alt="Angel Garfias" />
                         </div>
                     </Col>
                     <a href={socialLinks.linkedin} className="banner-link">Let's Connect<ArrowRightCircle size={25} /></a>
                 </Row>
             </Container>
-            <img className="background-image-banner" src={imagePaths.android} alt="" />
+            <img className="background-image-banner" src={imagePaths.android} alt="Android Logo" />
         </section >
     )
 }

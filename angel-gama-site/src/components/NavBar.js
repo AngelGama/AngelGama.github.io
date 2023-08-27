@@ -35,7 +35,7 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src={imagePaths.mylogo} alt="Logo" className="my-icon" />
+                    <img src={imagePaths.mylogo} alt="My Logo" className="my-icon" />
                     <p className="my-name">Angel Garfias</p>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" >
@@ -45,7 +45,7 @@ export const NavBar = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>About Me</Nav.Link>
                         <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                        <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                        <Nav.Link href="#career" className={activeLink === 'career' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('career')}>Career</Nav.Link>
                     </Nav>
                     <span className='navbar-toggle'>
                         <Toggle />
@@ -54,9 +54,8 @@ export const NavBar = () => {
                         <div className="social-icon">
                             <a href={socialLinks.linkedin}><img src={imagePaths.inlogo} alt="LinkedIn" /></a>
                             <a href={socialLinks.github}><img src={imagePaths.ghlogo} alt="GitHub" /></a>
-                            <a href={socialLinks.gdev}><img src={imagePaths.gdlogo} alt="GDP" /></a>
+                            <a href={socialLinks.gdev}><img src={imagePaths.gdlogo} alt="Google Developer Profile" /></a>
                         </div>
-                        {/* <button className="vvd" onClick={() => console.log('connect')}><span>Contact Me</span></button> */}
                     </span>
                 </Navbar.Collapse>
             </Container>

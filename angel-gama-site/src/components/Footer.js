@@ -14,7 +14,7 @@ export const Footer = () => {
                         <div className="social-icon">
                             <a href={socialLinks.linkedin}><img src={imagePaths.inlogo} alt="LinkedIn" /></a>
                             <a href={socialLinks.github}><img src={imagePaths.ghlogo} alt="GitHub" /></a>
-                            <a href={socialLinks.gdev}><img src={imagePaths.gdlogo} alt="GDP" /></a>
+                            <a href={socialLinks.gdev}><img src={imagePaths.gdlogo} alt="Google Developer Profile" /></a>
                         </div>
                         <p>© 2023 Angel Garfias. All rights reserved.</p>
                     </Col>

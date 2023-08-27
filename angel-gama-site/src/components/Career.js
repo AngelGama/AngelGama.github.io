@@ -7,7 +7,8 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css/autoplay';
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
 import 'animate.css'
 import { CertificationCard } from "./CertificationCard";
 
@@ -157,9 +158,9 @@ export const Career = () => {
                                                 prevEl: '.swiper-button-prev',
                                                 clickable: true,
                                             }}
-                                            modules={[EffectCoverflow, Pagination, Navigation]}
+                                            modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                                             autoplay={{
-                                                delay: 2500,
+                                                delay: 2000,
                                                 disableOnInteraction: true,
                                             }}
                                             className="swiper-container"

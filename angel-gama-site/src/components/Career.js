@@ -89,6 +89,30 @@ export const Career = () => {
             skills: ["Operating Systems", "Security Engineering", "Networking", "Algorithms", "Cloud Computing"],
             imageUrl: imagePaths.googlelogo,
         },
+        {
+            name: "Curso Profesional de Git & GitHub",
+            issuingOrganization: "Platzi",
+            issueDate: "August 2022",
+            credentialUrl: "https://platzi.com/p/angeelgamma962/curso/1557-git-github/diploma/detalle/",
+            skills: ["Git", "GitHub", "Terminal", "Version Control System (VCS)", "Branching", "Merging"],
+            imageUrl: imagePaths.ghlogo,
+        },
+        {
+            name: "Técnico en Electrónica",
+            issuingOrganization: "Fundación Carlos Slim",
+            issueDate: "August 2020",
+            credentialUrl: "https://capacitateparaelempleo.org/verifica/c636178c-2c61-449f-88eb-76722b3281a1/04001255-dcef-49c1-b8c8-49d5ce19d3d5",
+            skills: ["Circuit Design and Analysis", "Soldering and PCB Design", "Analog and Digital Electronics", "Digital Logic Design"],
+            imageUrl: imagePaths.fcs,
+        },
+        {
+            name: "Técnico en instalación y reparación de equipo de cómputo",
+            issuingOrganization: "Fundación Carlos Slim",
+            issueDate: "August 2020",
+            credentialUrl: "https://capacitateparaelempleo.org/verifica/c636178c-2c61-449f-88eb-76722b3281a1/74d775ad-59c3-431d-aa19-a34caf709536",
+            skills: ["Hardware Troubleshooting", "Computer Diagnostics", "BIOS and Firmware Configuration", "Operating Systems"],
+            imageUrl: imagePaths.fcs,
+        },
     ];
 
     return (
@@ -143,13 +167,15 @@ export const Career = () => {
                                             grabCursor={true}
                                             centeredSlides={true}
                                             loop={true}
+                                            loopedSlides={3}
                                             slidesPerView={'auto'}
                                             coverflowEffect={
                                                 {
                                                     rotate: 0,
                                                     stretch: 0,
                                                     depth: 100,
-                                                    modifier: 2.5,
+                                                    modifier: 3.5,
+                                                    slideShadows: true,
                                                 }
                                             }
                                             pagination={{ el: '.swiper-pagination', clickable: true }}

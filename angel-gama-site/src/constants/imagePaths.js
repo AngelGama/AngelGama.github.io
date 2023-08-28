@@ -19,4 +19,5 @@ export const imagePaths = {
     unitylogo: unitylogo,
     googlelogo: googlelogo,
     ipn: "https://www.ipn.mx/assets/files/main/img/template/logo_ipn_guinda.svg",
+    fcs: "https://capacitateparaelempleo.org/assets/images/logocpe.jpeg",
 }

@@ -32,7 +32,7 @@ export const NavBar = () => {
 
     return (
 
-        <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
+        <Navbar expand="lg" className={scrolled ? 'scrolled' : ''} collapseOnSelect>
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={imagePaths.mylogo} alt="My Logo" className="my-icon" />

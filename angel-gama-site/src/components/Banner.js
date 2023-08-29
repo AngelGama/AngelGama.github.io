@@ -75,7 +75,7 @@ export const Banner = () => {
                             <img src={imagePaths.profile} alt="Angel Garfias" />
                         </div>
                     </Col>
-                    <a href={socialLinks.linkedin} className="banner-link">Let's Connect<ArrowRightCircle size={25} /></a>
+                    <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="banner-link">Let's Connect<ArrowRightCircle size={25} /></a>
                 </Row>
             </Container>
             <img className="background-image-banner" src={imagePaths.android} alt="Android Logo" />

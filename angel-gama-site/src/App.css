@@ -133,7 +133,6 @@ p {
 /* #region Navigation Bar Section */
 
 nav.navbar {
-  padding: 10px 0 10px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -150,7 +149,6 @@ nav.navbar a.navbar-brand {
 .my-icon {
   width: 50px;
   height: 50px;
-  margin-bottom: 10px;
 }
 
 .my-name {
@@ -162,6 +160,7 @@ nav.navbar a.navbar-brand {
   display: inline-block;
   color: var(--on-surface);
   transition: 0.3s ease-in-out;
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
@@ -194,7 +193,7 @@ span.navbar-toggle {
   align-items: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   span.navbar-toggle {
     padding: 20px 0;
   }
@@ -262,8 +261,16 @@ nav.navbar .navbar-toggler-icon {
   top: -2px;
 }
 
-nav.navbar .navbar-toggler:hover {
+@media not all and (pointer: coarse) {
+  nav.navbar .navbar-toggler:hover {
+    background-color: var(--primary-container);
+    opacity: 0.5 !important;
+  }
+}
+
+nav.navbar .navbar-toggler:active {
   background-color: var(--primary-container);
+  opacity: 0.75 !important;
 }
 
 nav.navbar .navbar-toggler-icon:after,
@@ -281,12 +288,6 @@ nav.navbar .navbar-toggler-icon:before {
 
 nav.navbar .navbar-toggler-icon:after {
   top: 8px;
-}
-
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler:before {
-  transform: translateY(8px) rotate(-45deg);
-  background-color: var(--primary);
-  height: 2px;
 }
 
 /* #endregion */
@@ -561,6 +562,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler:before {
 
 .react-multiple-carousel__arrow {
   background: var(--primary) !important;
+  border: 1px solid var(--outline) !important;
+  opacity: 0.25 !important;
+  transition: opacity 0.3s !important;
+}
+
+@media not all and (pointer: coarse) {
+  .react-multiple-carousel__arrow:hover {
+    opacity: 0.5 !important;
+  }
+}
+
+.react-multiple-carousel__arrow:active {
+  opacity: 0.75 !important;
 }
 
 .react-multiple-carousel__arrow:before {
@@ -1011,28 +1025,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler:before {
   border-radius: 50%;
   border: 1px solid var(--outline);
   opacity: 0.25;
-}
-
-.slider-controler .slider-arrow {
   font-size: 1.5rem;
   text-align: center;
   color: var(--on-primary);
   user-select: none;
+  transition: opacity 0.3s;
 }
 
-.slider-controler .slider-arrow:active,
-.slider-controler .slider-arrow:focus {
-  opacity: 0.75;
-}
+@media (pointer: coarse) {
 
-@media (hover: hover) {
   .slider-controler .slider-arrow:hover {
-    opacity: 0.75;
+    opacity: 0.25;
   }
 
   .slider-controler .slider-arrow:active,
   .slider-controler .slider-arrow:focus {
+    opacity: 0.75;
+  }
+}
+
+@media not all and (pointer: coarse) {
+  .slider-controler .slider-arrow:hover {
     opacity: 0.5;
+  }
+
+  .slider-controler .slider-arrow:active,
+  .slider-controler .slider-arrow:focus {
+    opacity: 0.75;
   }
 }
 

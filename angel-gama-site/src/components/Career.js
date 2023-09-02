@@ -84,8 +84,8 @@ export const Career = () => {
         {
             name: "Google IT Support",
             issuingOrganization: "Google Career Certificates",
-            issueDate: "August 2023",
-            credentialUrl: "https://coursera.org/share/59761f00738c832d300fd8a45f897db3",
+            issueDate: "September 2023",
+            credentialUrl: "https://coursera.org/share/732e2d1b35453f5251170e755f0d1ca8",
             skills: ["Operating Systems", "Security Engineering", "Networking", "Algorithms", "Cloud Computing"],
             imageUrl: imagePaths.googlelogo,
         },

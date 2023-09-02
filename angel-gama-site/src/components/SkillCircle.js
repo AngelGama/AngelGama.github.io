@@ -5,6 +5,10 @@ export const SkillCircle = ({ percent, circleWidth }) => {
     const dashOffset = dashArray - (dashArray * percent) / 100;
     const strokeWidth = circleWidth * 0.075;
 
+    const setPRoficiency = () => {
+        return percent >= 85 ? "Skilled" : percent >= 75 ? "Proficient" : "Competent";
+    };
+
     return (
         <div>
             <svg
@@ -13,12 +17,10 @@ export const SkillCircle = ({ percent, circleWidth }) => {
                 viewBox={`0 0 ${circleWidth} ${circleWidth}`}
             >
                 <defs>
-                    <linearGradient id="gradient" >
-                        <stop offset="0%" stop-color="#6F2DBD" />
-                        <stop offset="20%" stop-color="#A663CC" />
-                        <stop offset="40%" stop-color="#B298DC" />
-                        <stop offset="80%" stop-color="#B8D0EB" />
-                        <stop offset="100%" stop-color="#B9FAF8" />
+                    <linearGradient id="gradient" gradientTransform="rotate(70)" >
+                        <stop offset="0%" stop-color="var(--tertiary)" />
+                        <stop offset="50%" stop-color="var(--secondary)" />
+                        <stop offset="100%" stop-color="var(--primary)" />
                     </linearGradient>
                 </defs>
                 <circle
@@ -44,7 +46,7 @@ export const SkillCircle = ({ percent, circleWidth }) => {
                     stroke="url(#gradient)"
                 />
                 <text x="50%" y="50%" dy="0.3em" textAnchor="middle" className="circle-text" fill="url(#gradient)">
-                    {percent}%
+                    {setPRoficiency(percent)}
                 </text>
             </svg>
         </div>

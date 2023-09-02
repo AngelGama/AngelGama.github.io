@@ -15,7 +15,7 @@ export const Skills = () => {
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3
+            items: 4
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -26,6 +26,57 @@ export const Skills = () => {
             items: 1
         }
     };
+
+    const skills = [
+        {
+            name: 'Android Development',
+            percent: 90
+        },
+        {
+            name: 'Unity',
+            percent: 85
+        },
+        {
+            name: 'REACT',
+            percent: 65
+        },
+        {
+            name: 'Mobile Development',
+            percent: 90
+        },
+        {
+            name: 'Kotlin',
+            percent: 85
+        },
+        {
+            name: 'Python',
+            percent: 80
+        },
+        {
+            name: 'C#',
+            percent: 75
+        },
+        {
+            name: 'C/C++',
+            percent: 70
+        },
+        {
+            name: 'Java',
+            percent: 70
+        },
+        {
+            name: 'JavaScript',
+            percent: 70
+        },
+        {
+            name: 'TensorFlow',
+            percent: 50
+        },
+        {
+            name: 'Pytorch',
+            percent: 50
+        }
+    ]
 
     return (
         <section className="skill" id="skills">
@@ -46,23 +97,17 @@ export const Skills = () => {
                             <TrackVisibility>
                                 {({ isVisible }) =>
                                     <div className={isVisible ? "animate__animated animate__rubberBand" : ""}>
-                                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                                            <div className="item">
-                                                <SkillCircle percent={90} circleWidth="200" />
-                                                <h5>Android Studio</h5>
-                                            </div>
-                                            <div className="item">
-                                                <SkillCircle percent={90} circleWidth="200" />
-                                                <h5>Unity</h5>
-                                            </div>
-                                            <div className="item">
-                                                <SkillCircle percent={90} circleWidth="200" />
-                                                <h5>Mobile Development</h5>
-                                            </div>
-                                            <div className="item">
-                                                <SkillCircle percent={70} circleWidth="200" />
-                                                <h5>REACT</h5>
-                                            </div>
+                                        <Carousel responsive={responsive} infinite={true} autoPlay={true} className="skill-slider">
+                                            {
+                                                skills.map((skill, index) => {
+                                                    return (
+                                                        <div className="item">
+                                                            <SkillCircle percent={skill.percent} circleWidth="200" />
+                                                            <h5>{skill.name}</h5>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
                                         </Carousel>
                                     </div>
                                 }

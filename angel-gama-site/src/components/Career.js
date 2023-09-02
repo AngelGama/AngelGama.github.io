@@ -131,7 +131,7 @@ export const Career = () => {
                         <Tab.Container id="career-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Career</Nav.Link>
+                                    <Nav.Link eventKey="first">Projects</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="second">Experience</Nav.Link>
@@ -143,7 +143,7 @@ export const Career = () => {
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <p>🚧 Disclaimer: Under Construction! 🛠️</p>
-                                    <Row>
+                                    <Row className="projects-row">
                                         {
                                             projects.map((project, index) => {
                                                 return (

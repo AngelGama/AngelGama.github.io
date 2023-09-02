@@ -134,10 +134,12 @@ p {
 
 nav.navbar {
   position: fixed;
-  width: 100%;
+  width: 100vw;
+  left: 0;
+  right: 0;
   top: 0;
   z-index: 9999;
-  transition: 0.32 ease-in-out;
+  transition: 0.3s ease-in-out;
   background: var(--surface);
   border-bottom: 1px solid var(--outline);
 }
@@ -636,13 +638,18 @@ nav.navbar .navbar-toggler-icon:after {
   margin: 0 auto;
   border-radius: 55px;
   background: var(--background);
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .career .nav.nav-pills .nav-item {
   width: 33.33333%;
+}
+
+.career .nav.nav-pills .nav-item a {
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .career .nav.nav-pills .nav-link {
@@ -787,9 +794,6 @@ nav.navbar .navbar-toggler-icon:after {
     margin: 0 auto;
     border-radius: 25px;
     background-color: var(--background);
-    overflow: hidden;
-    white-space: normal;
-    text-overflow: ellipsis;
   }
 
   .career .nav.nav-pills .nav-item {
@@ -850,6 +854,11 @@ nav.navbar .navbar-toggler-icon:after {
   .nav-link#career-tabs-tab-third {
     border: 1px solid var(--outline);
     border-radius: 0px 0px 25px 25px;
+  }
+
+  .projects-row {
+    width: 100vw !important;
+    margin: 0 auto !important;
   }
 
   .background-image-career {

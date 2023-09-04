@@ -11,6 +11,8 @@ import 'swiper/css/autoplay';
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
 import 'animate.css'
 import { CertificationCard } from "./CertificationCard";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import 'react-vertical-timeline-component/style.min.css';
 
 export const Career = () => {
 
@@ -46,6 +48,49 @@ export const Career = () => {
             imgUrl: imagePaths.ghlogo,
         },
 
+    ];
+
+    const experience = [
+        {
+            title: "Unity Developer",
+            location: "CDMX, Mexico",
+            startDate: "November 2022",
+            endDate: "February 2023",
+            description: "Creating cross-platform Unity screensaver client: Android, iOS, OSX, Windows, Linux, tvOS, C++ to C# migration, interpolation systems, Mitchell-Netravali filters, custom shaders.",
+            icon: imagePaths.unitylogo,
+        },
+        {
+            title: "Android SME",
+            location: "Guadalajara, Mexico",
+            startDate: "February 2022",
+            endDate: "October 2022",
+            description: "Android SME, Mentorship, Junior Developer Support, Bug Monitoring, Android Development, Mobile & TV Projects.",
+            icon: imagePaths.android,
+        },
+        {
+            title: "VR Developer",
+            location: "CDMX, Mexico",
+            startDate: "December 2021",
+            endDate: "February 2022",
+            description: "Unity VR App Development, Android VR App Creation, LEAP Motion Controller Integration.",
+            icon: imagePaths.vricon,
+        },
+        {
+            title: "Communications & Electronics Engineering",
+            location: "Specialization in Computing",
+            startDate: "August 2017",
+            endDate: "December 2021",
+            description: "Studied Communications and Electronics Engineering with a specialization in Computing at IPN. Developed expertise in areas such as computer architecture, software development, and digital communications.",
+            icon: imagePaths.school,
+        },
+        {
+            title: "Development of innovation and research projects in computer science, Internship",
+            location: "CDMX, Mexico",
+            startDate: "March 2021",
+            endDate: "December 2021",
+            description: "Exploring innovative computer science projects, crafting car driving simulators, creating Android apps in Unity, training AI with TensorFlow Lite.",
+            icon: imagePaths.csicon,
+        }
     ];
 
     const certifications = [
@@ -134,7 +179,7 @@ export const Career = () => {
                                     <Nav.Link eventKey="first">Projects</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Experience</Nav.Link>
+                                    <Nav.Link eventKey="second">Professional Journey</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third" >Education & Certifications</Nav.Link>
@@ -158,7 +203,35 @@ export const Career = () => {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
                                     <p>🚧 Disclaimer: Under Construction! 🛠️</p>
-                                    <img src={imagePaths.reactlogo} className="App-logo" alt="React logo" />
+                                    <VerticalTimeline
+                                        lineColor="var(--on-background)"
+                                    >
+                                        {
+                                            experience.map((job, index) => {
+
+                                                const iconBackgroundColor = index === 3 ? '#00637E' : '#7030A0';
+
+                                                return (
+                                                    <VerticalTimelineElement
+                                                        className="vertical-timeline-element--work"
+                                                        contentStyle={{ background: 'var(--surface-variant)', color: 'var(--primary)' }}
+                                                        contentArrowStyle={{ borderRight: '7px solid  var(--primary)' }}
+                                                        date={job.startDate + " - " + job.endDate}
+                                                        iconStyle={{ background: iconBackgroundColor }}
+                                                        icon={<img src={job.icon} alt={`${job.title} Icon`} style={{ width: '100%', padding: '5px' }} />}
+                                                    >
+                                                        <h3 className="vertical-timeline-element-title">{job.title}</h3>
+                                                        <h4 className="vertical-timeline-element-subtitle">{job.location}</h4>
+                                                        <p>{job.description}</p>
+                                                    </VerticalTimelineElement>
+                                                )
+                                            })
+                                        }
+                                        <VerticalTimelineElement
+                                            iconStyle={{ background: '#22B9C1', color: '#fff' }}
+                                            icon={<img src={imagePaths.starticon} alt="Start Icon" style={{ width: '100%', padding: '8px' }} />}
+                                        />
+                                    </VerticalTimeline>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
                                     <div className="container-certifications">
@@ -225,7 +298,6 @@ export const Career = () => {
                                             </div>
                                         </Swiper>
                                     </div>
-                                    <p>🚧 Disclaimer: Under Construction! 🛠️</p>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>

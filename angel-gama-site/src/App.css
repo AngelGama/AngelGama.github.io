@@ -370,7 +370,7 @@ nav.navbar .navbar-toggler-icon:after {
 }
 
 .toggle-input:not(:checked)+.toggle-label .moon-icon {
-  filter: brightness(50%) contrast(1000%) saturate(0%) sepia(0%) hue-rotate(0deg);
+  filter: brightness(50%) contrast(100%) saturate(0%) sepia(0%) hue-rotate(0deg);
 }
 
 /* #endregion */
@@ -866,6 +866,31 @@ nav.navbar .navbar-toggler-icon:after {
     top: 1vh;
     left: 5vw;
   }
+}
+
+.vertical-timeline-element-content {
+  border-radius: 1rem !important;
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.5rem !important;
+  color: var(--primary) !important;
+  font-family: monospace !important;
+  margin: 10px auto !important;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1.125rem !important;
+  font-weight: lighter !important;
+  margin-bottom: 10px !important;
+  color: var(--tertiary) !important;
+}
+
+.vertical-timeline-element-content p {
+  width: 90%;
+  margin: 0 auto !important;
+  font-size: 1rem !important;
+  font-weight: normal !important;
 }
 
 /* #endregion */

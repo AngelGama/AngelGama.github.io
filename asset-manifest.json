@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.abeb1d20.css",
-    "main.js": "/static/js/main.2463c105.js",
+    "main.css": "/static/css/main.ddd4085c.css",
+    "main.js": "/static/js/main.0e449f03.js",
     "static/js/787.824befec.chunk.js": "/static/js/787.824befec.chunk.js",
     "static/media/gdlogo.svg": "/static/media/gdlogo.436e5dd25100e9e2da11a1d609fa5f2f.svg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -11,19 +11,23 @@
     "static/media/inlogo.svg": "/static/media/inlogo.ed70f99826ad2caada98aa2a53f9d3fd.svg",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/googlelogo.svg": "/static/media/googlelogo.55b0c8888fec7e0f406cd0799e66fcf5.svg",
+    "static/media/csicon.svg": "/static/media/csicon.8df50cf43ff925662f4f958fa129bf0e.svg",
+    "static/media/vricon.svg": "/static/media/vricon.e8164412643a6fe729665324f7f9afca.svg",
     "static/media/reactlogo.svg": "/static/media/reactlogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/mylogo.svg": "/static/media/mylogo.d051de173dd99e56435c85c452f559a7.svg",
     "static/media/moon.svg": "/static/media/moon.23738d343fe0761bb306f7575e053211.svg",
+    "static/media/starticon.svg": "/static/media/starticon.9da503a1323434f6bc6bd97a939d8c8c.svg",
     "static/media/unitylogo.svg": "/static/media/unitylogo.607bf2b3e710b34d9b2f9e7d71a6f8a9.svg",
     "static/media/ghlogo.svg": "/static/media/ghlogo.97ed8e7eef60d61ca469881dd6f34511.svg",
     "static/media/sun.svg": "/static/media/sun.2920a62afd2ea0fe17a6f76991b7b9f2.svg",
     "index.html": "/index.html",
-    "main.abeb1d20.css.map": "/static/css/main.abeb1d20.css.map",
-    "main.2463c105.js.map": "/static/js/main.2463c105.js.map",
+    "static/media/schoolicon.svg": "/static/media/schoolicon.942062435163027950af949785306e58.svg",
+    "main.ddd4085c.css.map": "/static/css/main.ddd4085c.css.map",
+    "main.0e449f03.js.map": "/static/js/main.0e449f03.js.map",
     "787.824befec.chunk.js.map": "/static/js/787.824befec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abeb1d20.css",
-    "static/js/main.2463c105.js"
+    "static/css/main.ddd4085c.css",
+    "static/js/main.0e449f03.js"
   ]
 }

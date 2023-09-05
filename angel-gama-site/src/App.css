@@ -1148,6 +1148,52 @@ nav.navbar .navbar-toggler-icon:after {
 
 /* #endregion */
 
+/* #region Disclaimer Section */
+
+.disclaimer {
+  position: fixed;
+  margin: 1rem;
+  bottom: 0;
+  right: 0;
+  width: 30vw;
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+  padding: 10px;
+  text-align: center;
+  border-radius: 1rem;
+  z-index: 999;
+  transform: translateY(110%);
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+  .disclaimer {
+    width: calc(100% - 2rem);
+  }
+}
+
+.disclaimer button {
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+  border: 1px solid var(--outline);
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.disclaimer-tittle {
+  font-size: 1.25 rem;
+  font-family: monospace;
+}
+
+.disclaimer:not(.accepted) {
+  transform: translateY(0%);
+}
+
+/* #endregion */
+
 /* #region Default React Project Style Section */
 
 .App {

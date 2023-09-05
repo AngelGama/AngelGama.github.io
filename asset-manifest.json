@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ddd4085c.css",
-    "main.js": "/static/js/main.0e449f03.js",
+    "main.css": "/static/css/main.872668ee.css",
+    "main.js": "/static/js/main.3ae7f13d.js",
     "static/js/787.824befec.chunk.js": "/static/js/787.824befec.chunk.js",
     "static/media/gdlogo.svg": "/static/media/gdlogo.436e5dd25100e9e2da11a1d609fa5f2f.svg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -22,12 +22,12 @@
     "static/media/sun.svg": "/static/media/sun.2920a62afd2ea0fe17a6f76991b7b9f2.svg",
     "index.html": "/index.html",
     "static/media/schoolicon.svg": "/static/media/schoolicon.942062435163027950af949785306e58.svg",
-    "main.ddd4085c.css.map": "/static/css/main.ddd4085c.css.map",
-    "main.0e449f03.js.map": "/static/js/main.0e449f03.js.map",
+    "main.872668ee.css.map": "/static/css/main.872668ee.css.map",
+    "main.3ae7f13d.js.map": "/static/js/main.3ae7f13d.js.map",
     "787.824befec.chunk.js.map": "/static/js/787.824befec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddd4085c.css",
-    "static/js/main.0e449f03.js"
+    "static/css/main.872668ee.css",
+    "static/js/main.3ae7f13d.js"
   ]
 }

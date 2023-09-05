@@ -84,6 +84,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.5s ease-in-out;
 }
 
 html {
@@ -139,7 +140,6 @@ nav.navbar {
   right: 0;
   top: 0;
   z-index: 9999;
-  transition: 0.3s ease-in-out;
   background: var(--surface);
   border-bottom: 1px solid var(--outline);
 }
@@ -353,6 +353,7 @@ nav.navbar .navbar-toggler-icon:after {
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+  user-select: none;
 }
 
 .sun-icon {
@@ -378,7 +379,7 @@ nav.navbar .navbar-toggler-icon:after {
 /* #region Banner Section */
 
 .banner {
-  margin: 100px var(--big-margin) var(--big-margin) var(--big-margin);
+  margin: 70px var(--big-margin) var(--big-margin) var(--big-margin);
 }
 
 .banner .tagline {
@@ -1198,6 +1199,7 @@ nav.navbar .navbar-toggler-icon:after {
 
 .App {
   text-align: center;
+  background-color: var(--background);
 }
 
 .App-logo {

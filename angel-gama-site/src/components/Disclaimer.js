@@ -21,7 +21,7 @@ export const Disclaimer = () => {
         <div className={`disclaimer${showDisclaimer ? '' : ' accepted'}`}>
             <p className="disclaimer-tittle">🚧 This website is under construction 🛠️</p>
             <p>I appreciate your patience as I work on improving it. Your feedback is valuable to me, so please don't hesitate to share your thoughts on my LinkedIn.</p>
-            <button onClick={handleAcceptDisclaimer}>Accept</button>
+            <button type="button" onClick={handleAcceptDisclaimer}>Accept</button>
         </div>
     )
 }

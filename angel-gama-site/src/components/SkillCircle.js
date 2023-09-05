@@ -1,4 +1,8 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const SkillCircle = ({ percent, circleWidth }) => {
+
+    const gradientId = `gradient-${uuidv4()}`;
 
     const radius = circleWidth * 0.425;
     const dashArray = radius * Math.PI * 2;
@@ -17,7 +21,7 @@ export const SkillCircle = ({ percent, circleWidth }) => {
                 viewBox={`0 0 ${circleWidth} ${circleWidth}`}
             >
                 <defs>
-                    <linearGradient id="gradient" gradientTransform="rotate(70)" >
+                    <linearGradient id={gradientId} gradientTransform="rotate(70)" >
                         <stop offset="0%" stop-color="var(--tertiary)" />
                         <stop offset="50%" stop-color="var(--secondary)" />
                         <stop offset="100%" stop-color="var(--primary)" />
@@ -43,9 +47,9 @@ export const SkillCircle = ({ percent, circleWidth }) => {
                         }
                     }
                     transform={`rotate(-90 ${circleWidth / 2} ${circleWidth / 2})`}
-                    stroke="url(#gradient)"
+                    stroke={`url(#${gradientId})`}
                 />
-                <text x="50%" y="50%" dy="0.3em" textAnchor="middle" className="circle-text" fill="url(#gradient)">
+                <text x="50%" y="50%" dy="0.3em" textAnchor="middle" className="circle-text" fill={`url(#${gradientId})`}>
                     {setPRoficiency(percent)}
                 </text>
             </svg>

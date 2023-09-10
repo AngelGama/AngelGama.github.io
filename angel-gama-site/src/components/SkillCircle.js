@@ -22,9 +22,9 @@ export const SkillCircle = ({ percent, circleWidth }) => {
             >
                 <defs>
                     <linearGradient id={gradientId} gradientTransform="rotate(70)" >
-                        <stop offset="0%" stop-color="var(--tertiary)" />
-                        <stop offset="50%" stop-color="var(--secondary)" />
-                        <stop offset="100%" stop-color="var(--primary)" />
+                        <stop offset="0%" stopColor="var(--tertiary)" />
+                        <stop offset="50%" stopColor="var(--secondary)" />
+                        <stop offset="100%" stopColor="var(--primary)" />
                     </linearGradient>
                 </defs>
                 <circle

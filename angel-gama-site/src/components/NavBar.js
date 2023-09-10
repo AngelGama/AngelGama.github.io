@@ -53,13 +53,13 @@ export const NavBar = () => {
 
     return (
 
-        <Navbar expand="lg" className={scrolled ? 'scrolled' : ''} expanded={expanded}>
+        <Navbar expand="lg" className={scrolled ? 'scrolled' : ''} onToggle={handleToggle} expanded={expanded}>
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={imagePaths.mylogo} alt="My Logo" className="my-icon" />
                     <p className="my-name">Angel Garfias</p>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle}                >
+                <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav" ref={menuRef}>

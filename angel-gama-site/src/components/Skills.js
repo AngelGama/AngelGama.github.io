@@ -101,7 +101,7 @@ export const Skills = () => {
                                             {
                                                 skills.map((skill, index) => {
                                                     return (
-                                                        <div className="item">
+                                                        <div className="item" key={index}>
                                                             <SkillCircle percent={skill.percent} circleWidth="200" />
                                                             <h5>{skill.name}</h5>
                                                         </div>

@@ -213,6 +213,7 @@ export const Career = () => {
 
                                                 return (
                                                     <VerticalTimelineElement
+                                                        key={index}
                                                         className="vertical-timeline-element--work"
                                                         contentStyle={{ background: 'var(--surface-variant)', color: 'var(--primary)' }}
                                                         contentArrowStyle={{ borderRight: '7px solid  var(--primary)' }}
@@ -278,9 +279,8 @@ export const Career = () => {
                                             {
                                                 certifications.map((certification, index) => {
                                                     return (
-                                                        <SwiperSlide >
+                                                        <SwiperSlide key={index}>
                                                             <CertificationCard
-                                                                key={index}
                                                                 {...certification}
                                                             />
                                                         </SwiperSlide>

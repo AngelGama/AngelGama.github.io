@@ -1193,6 +1193,22 @@ nav.navbar .navbar-toggler-icon:after {
   transform: translateY(0%);
 }
 
+.close-button {
+  position: relative;
+  top: 0;
+  right: -45%;
+  font-size: 2rem;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.close-button:hover {
+  color: var(--error);
+}
+
 /* #endregion */
 
 /* #region Default React Project Style Section */

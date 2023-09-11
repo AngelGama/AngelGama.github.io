@@ -16,7 +16,7 @@ export const Toggle = () => {
 
     const selectedTheme = localStorage.getItem('selectedTheme');
 
-    if (selectedTheme === "light") setLightMode();
+    if (selectedTheme === 'light') setLightMode();
     else setDarkMode();
 
     const toggleTheme = e => {
@@ -30,7 +30,7 @@ export const Toggle = () => {
                 className="toggle-input"
                 type="checkbox"
                 id="toggle"
-                defaultChecked={selectedTheme === "dark"}
+                defaultChecked={selectedTheme === 'light' ? false : true}
                 onChange={toggleTheme}
             />
             <label className="toggle-label" htmlFor="toggle">

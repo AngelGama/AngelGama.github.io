@@ -261,7 +261,8 @@ export const Career = () => {
                                             modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                                             autoplay={{
                                                 delay: 2000,
-                                                disableOnInteraction: true,
+                                                disableOnInteraction: false,
+                                                pauseOnMouseEnter: true,
                                             }}
                                             className="swiper-container"
                                         >

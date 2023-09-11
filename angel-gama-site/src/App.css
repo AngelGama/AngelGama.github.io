@@ -977,6 +977,7 @@ nav.navbar .navbar-toggler-icon:after {
 .swiper-container {
   position: relative;
   width: 100%;
+  padding-bottom: 10px !important;
 }
 
 .swiper-wrapper {
@@ -1108,6 +1109,7 @@ nav.navbar .navbar-toggler-icon:after {
 .swiper-pagination {
   position: relative;
   width: 100% !important;
+  padding-bottom: 10px;
 }
 
 .swiper-pagination .swiper-pagination-bullet {

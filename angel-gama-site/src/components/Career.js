@@ -135,6 +135,14 @@ export const Career = () => {
             imageUrl: imagePaths.googlelogo,
         },
         {
+            name: "Google UX Design Professional Certificate",
+            issuingOrganization: "Google Career Certificates",
+            issueDate: "In Progress",
+            credentialUrl: "https://coursera.org/share/112a5cf8d0b4acb5cf41504617ea49c1",
+            skills: ["User Experience (UX)", "User Interface (UI)", "Wireframing", "Prototyping", "Design Thinking"],
+            imageUrl: imagePaths.googlelogo,
+        },
+        {
             name: "Curso Profesional de Git & GitHub",
             issuingOrganization: "Platzi",
             issueDate: "August 2022",
@@ -202,7 +210,6 @@ export const Career = () => {
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    <p>🚧 Disclaimer: Under Construction! 🛠️</p>
                                     <VerticalTimeline
                                         lineColor="var(--on-background)"
                                     >

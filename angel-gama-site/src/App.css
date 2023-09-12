@@ -178,11 +178,30 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  position: relative;
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 2px;
+  top: 100%;
+  left: 10%;
+  transition: transform 0.3s;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background-color: var(--primary);
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 span.navbar-text {
@@ -198,6 +217,11 @@ span.navbar-toggle {
 @media (max-width: 991px) {
   span.navbar-toggle {
     padding: 20px 0;
+  }
+
+  nav.navbar .navbar-nav a.nav-link.navbar-link::after {
+    width: 40%;
+    left: 30%;
   }
 }
 

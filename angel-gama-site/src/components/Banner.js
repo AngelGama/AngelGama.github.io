@@ -64,7 +64,7 @@ export const Banner = () => {
                         <h1>{`Hi I'm Angel `}<span className="wrap">{text}</span><span className={showCursor ? 'cursor' : 'cursor-hidden'}>|</span></h1>
                         <TrackVisibility>
                             {({ isVisible }) =>
-                                <div className={isVisible ? "animate__animated animate__zoomInUp" : "animate__animated animate__zoomOutUp"}>
+                                <div className={isVisible ? "animate__animated animate__swing" : ""}>
                                     <p>I'm a passionate and experienced Developer with a strong background in software development. I thrive on solving complex challenges in innovative ways, committed to staying up-to-date with the latest technologies, I'm eager to contribute to software development because I'm driven by the belief that technology serves as a creative tool to address social challenges and enhance lives.</p>
                                 </div>
                             }

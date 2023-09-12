@@ -94,24 +94,18 @@ export const Skills = () => {
                                     </div>
                                 }
                             </TrackVisibility>
-                            <TrackVisibility>
-                                {({ isVisible }) =>
-                                    <div className={isVisible ? "animate__animated animate__rubberBand" : ""}>
-                                        <Carousel responsive={responsive} infinite={true} autoPlay={true} className="skill-slider">
-                                            {
-                                                skills.map((skill, index) => {
-                                                    return (
-                                                        <div className="item" key={index}>
-                                                            <SkillCircle percent={skill.percent} circleWidth="200" />
-                                                            <h5>{skill.name}</h5>
-                                                        </div>
-                                                    )
-                                                })
-                                            }
-                                        </Carousel>
-                                    </div>
+                            <Carousel responsive={responsive} infinite={true} autoPlay={true} pauseOnHover={true} className="skill-slider">
+                                {
+                                    skills.map((skill, index) => {
+                                        return (
+                                            <div className="item" key={index}>
+                                                <SkillCircle percent={skill.percent} circleWidth="200" />
+                                                <h5>{skill.name}</h5>
+                                            </div>
+                                        )
+                                    })
                                 }
-                            </TrackVisibility>
+                            </Carousel>
                         </div>
                     </Col>
                 </Row>

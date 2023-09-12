@@ -540,6 +540,7 @@ nav.navbar .navbar-toggler-icon:after {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  cursor: grab;
 }
 
 .skill-slider .item img {

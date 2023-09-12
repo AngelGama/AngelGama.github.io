@@ -175,7 +175,7 @@ export const Career = () => {
                     <Col>
                         <TrackVisibility>
                             {({ isVisible }) =>
-                                <div className={isVisible ? "animate__animated animate__bounce" : ""}>
+                                <div className={isVisible ? "animate__animated animate__headShake" : ""}>
                                     <h2>Career</h2>
                                     <p>Currently working on this, coming soon! 😄 </p>
                                 </div>

@@ -12,6 +12,7 @@ export const NavBar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [expanded, setExpanded] = useState(false);
     const menuRef = useRef(null);
+    const toggleRef = useRef(null);
 
     useEffect(() => {
         const onScroll = () => {
@@ -39,7 +40,7 @@ export const NavBar = () => {
 
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (expanded && menuRef.current && !menuRef.current.contains(event.target)) {
+            if (expanded && menuRef.current && !toggleRef.current.contains(event.target) && !menuRef.current.contains(event.target)) {
                 setExpanded(false);
             }
         };
@@ -59,7 +60,7 @@ export const NavBar = () => {
                     <img src={imagePaths.mylogo} alt="My Logo" className="my-icon" />
                     <p className="my-name">Angel Garfias</p>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav">
+                <Navbar.Toggle aria-controls="basic-navbar-nav" ref={toggleRef}>
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav" ref={menuRef}>

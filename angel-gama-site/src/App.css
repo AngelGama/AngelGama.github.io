@@ -88,6 +88,7 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
@@ -214,6 +215,36 @@ span.navbar-toggle {
   align-items: center;
 }
 
+.back-to-top-button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  opacity: 0.5;
+}
+
+.back-to-top-button.scrolled {
+  display: block;
+}
+
+@media not all and (pointer: coarse) {
+  .back-to-top-button:hover {
+    opacity: 0.75;
+  }
+}
+
+.back-to-top-button:active {
+  opacity: 1;
+}
+
 @media (max-width: 991px) {
   span.navbar-toggle {
     padding: 20px 0;
@@ -222,6 +253,20 @@ span.navbar-toggle {
   nav.navbar .navbar-nav a.nav-link.navbar-link::after {
     width: 40%;
     left: 30%;
+  }
+
+  .back-to-top-button {
+    width: 50vw;
+    opacity: 0.75;
+    border-radius: 50% 50% 0 0;
+    bottom: 0;
+    right: 25vw;
+  }
+
+  .back-to-top-button::after {
+    content: " Back to Top";
+    font-size: 12px;
+    margin-top: 5px;
   }
 }
 

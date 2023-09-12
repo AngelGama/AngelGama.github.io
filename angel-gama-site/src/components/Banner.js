@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowRightCircleFill } from "react-bootstrap-icons";
 import { imagePaths } from "../constants/imagePaths";
 import { socialLinks } from "../constants/socialLinks";
 import TrackVisibility from "react-on-screen";
@@ -75,7 +75,7 @@ export const Banner = () => {
                             <img src={imagePaths.profile} alt="Angel Garfias" />
                         </div>
                     </Col>
-                    <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="banner-link">Let's Connect<ArrowRightCircle size={25} /></a>
+                    <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="banner-link">Let's Connect<ArrowRightCircleFill size={25} /></a>
                 </Row>
             </Container>
             <img className="background-image-banner" src={imagePaths.android} alt="Android Logo" />

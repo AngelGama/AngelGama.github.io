@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { imagePaths } from '../constants/imagePaths';
 import { socialLinks } from '../constants/socialLinks';
 import { Toggle } from './Toggle';
+import { ChevronBarUp } from 'react-bootstrap-icons';
 
 export const NavBar = () => {
 
@@ -16,7 +17,7 @@ export const NavBar = () => {
 
     useEffect(() => {
         const onScroll = () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 500) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -38,6 +39,13 @@ export const NavBar = () => {
         setExpanded(!expanded);
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }
+
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (expanded && menuRef.current && !toggleRef.current.contains(event.target) && !menuRef.current.contains(event.target)) {
@@ -54,7 +62,7 @@ export const NavBar = () => {
 
     return (
 
-        <Navbar expand="lg" className={scrolled ? 'scrolled' : ''} onToggle={handleToggle} expanded={expanded}>
+        <Navbar expand="lg" onToggle={handleToggle} expanded={expanded}>
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={imagePaths.mylogo} alt="My Logo" className="my-icon" />
@@ -81,6 +89,7 @@ export const NavBar = () => {
                     </span>
                 </Navbar.Collapse>
             </Container>
+            <button type="button" className={`back-to-top-button ${scrolled ? 'scrolled' : ''}`} onClick={scrollToTop} ><ChevronBarUp /></button>
         </Navbar>
     );
 }

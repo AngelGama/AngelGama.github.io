@@ -13,41 +13,41 @@ import 'animate.css'
 import { CertificationCard } from "./CertificationCard";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
+import { projectsPaths } from "../constants/imagePaths";
 
 export const Career = () => {
 
     const projects = [
         {
-            title: "SECBEN",
+            title: "Cinematic Lightning Study",
             description: "Design & development",
-            imgUrl: imagePaths.ghlogo,
+            imgUrl: projectsPaths.lightningstudy,
+            link: "https://play.unity.com/mg/other/cinematic-lighting-study-challenge"
         },
         {
-            title: "Electric Sheep",
+            title: "Pachinko Challenge",
             description: "Design & development",
-            imgUrl: imagePaths.ghlogo,
+            imgUrl: projectsPaths.packinko,
+            link: "https://play.unity.com/mg/other/pachinkobuild-33"
         },
         {
-            title: "Tezozomoc Museum",
+            title: "Floor Is Lava",
             description: "Design & development",
-            imgUrl: imagePaths.ghlogo,
+            imgUrl: projectsPaths.floorislava,
+            link: "https://play.unity.com/mg/other/floorislavabuild-57"
         },
         {
-            title: "Portfolio",
+            title: "Essentials 3D Audio",
             description: "Design & development",
-            imgUrl: imagePaths.ghlogo,
+            imgUrl: projectsPaths.audio3d,
+            link: "https://play.unity.com/mg/other/essentials-3d-audio"
         },
         {
-            title: "MeowMenu",
+            title: "Still Life Challenge",
             description: "Design & development",
-            imgUrl: imagePaths.ghlogo,
+            imgUrl: projectsPaths.stilllife,
+            link: ""
         },
-        {
-            title: "Hand Traking",
-            description: "Design & development",
-            imgUrl: imagePaths.ghlogo,
-        },
-
     ];
 
     const experience = [

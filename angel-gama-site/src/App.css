@@ -448,7 +448,7 @@ nav.navbar .navbar-toggler-icon:after {
 /* #region Banner Section */
 
 .banner {
-  margin: 70px var(--big-margin) var(--big-margin) var(--big-margin);
+  margin: 70px var(--big-margin) var(--small-margin) var(--big-margin);
 }
 
 .banner .tagline {
@@ -591,7 +591,6 @@ nav.navbar .navbar-toggler-icon:after {
 
 .skill-bx {
   text-align: center;
-  padding: 50px 0 50px 0;
 }
 
 .skill h2 {
@@ -784,9 +783,12 @@ nav.navbar .navbar-toggler-icon:after {
 
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  width: 100%;
+  border-radius: 1rem;
   overflow: hidden;
   margin-bottom: 24px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  user-select: none;
 }
 
 .proj-imgbx::before {
@@ -797,6 +799,8 @@ nav.navbar .navbar-toggler-icon:after {
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 1rem;
 }
 
 .proj-imgbx:hover::before {
@@ -813,6 +817,8 @@ nav.navbar .navbar-toggler-icon:after {
   opacity: 0;
   width: 100%;
   color: var(--on-primary-container);
+  user-select: none;
+  cursor: pointer;
 }
 
 .proj-imgbx:hover .proj-txtx {
@@ -838,10 +844,9 @@ nav.navbar .navbar-toggler-icon:after {
   padding-bottom: 50px;
 }
 
-.proj-imgbx img {
-  background: var(--scrim);
-  border-radius: 50%;
-  border: 2px solid var(--outline);
+.proj-img {
+  width: 100%;
+  border-radius: 1rem !important;
 }
 
 .background-image-career {

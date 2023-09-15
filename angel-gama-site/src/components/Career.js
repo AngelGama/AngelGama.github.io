@@ -19,6 +19,27 @@ export const Career = () => {
 
     const projects = [
         {
+            title: "Portfolio",
+            description: "Design & development",
+            imgUrl: projectsPaths.portfolio,
+        },
+        {
+            title: "Machine Learning Car",
+            description: "Design & development",
+            imgUrl: projectsPaths.mlcar,
+        },
+        {
+            title: "Car Driving Simulator",
+            description: "Design & development",
+            imgUrl: projectsPaths.secben,
+        },
+        {
+            title: "Procedural Lightning Generator",
+            description: "Design & development",
+            imgUrl: projectsPaths.lightningpg,
+            link: "https://github.com/AngelGama/UnityLightnings"
+        },
+        {
             title: "Cinematic Lightning Study",
             description: "Design & development",
             imgUrl: projectsPaths.lightningstudy,
@@ -46,7 +67,21 @@ export const Career = () => {
             title: "Still Life Challenge",
             description: "Design & development",
             imgUrl: projectsPaths.stilllife,
-            link: ""
+        },
+        {
+            title: "Business Card",
+            description: "Design & development with Jetpack Compose",
+            imgUrl: projectsPaths.businessCard,
+        },
+        {
+            title: "Tip Calculator",
+            description: "Design & development",
+            imgUrl: projectsPaths.tiptime,
+        },
+        {
+            title: "Games Database",
+            description: "Design & development",
+            imgUrl: projectsPaths.games,
         },
     ];
 

@@ -5,6 +5,7 @@ import TrackVisibility from 'react-on-screen';
 import 'animate.css'
 import { imagePaths } from "../constants/imagePaths";
 import { SkillCircle } from "./SkillCircle";
+import { Globe } from "react-bootstrap-icons";
 
 export const Skills = () => {
 
@@ -87,10 +88,17 @@ export const Skills = () => {
                             <TrackVisibility>
                                 {({ isVisible }) =>
                                     <div className={isVisible ? "animate__animated animate__bounce" : ""}>
-                                        <h2>
-                                            Skills
-                                        </h2>
-                                        <p>In addition to my technical skills, I bring valuable experience working in diverse and multicultural environments. Throughout my career, I have had the privilege of collaborating with teams from different parts of the world, including Argentina, Ukraine, India, and the United States. This exposure has not only enhanced my ability to adapt and communicate effectively, but it has also strengthened my proficiency in English as a language for seamless team collaboration.</p>
+                                        <Row>
+                                            <Col xs={12} md={9} xl={9}>
+                                                <h2>
+                                                    Skills
+                                                </h2>
+                                                <p>In addition to my technical skills, I bring valuable experience working in diverse and multicultural environments. Throughout my career, I have had the privilege of collaborating with teams from different parts of the world, including Argentina, Ukraine, India, and the United States. This exposure has not only enhanced my ability to adapt and communicate effectively, but it has also strengthened my proficiency in English as a language for seamless team collaboration.</p>
+                                            </Col>
+                                            <Col xs={12} md={3} xl={3}>
+                                                <Globe size={200} color="var(--primary)" alignmentBaseline="central" />
+                                            </Col>
+                                        </Row>
                                     </div>
                                 }
                             </TrackVisibility>

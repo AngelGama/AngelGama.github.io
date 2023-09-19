@@ -59,8 +59,15 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <span className="tagline">Welcome to my Portfolio</span>
-                    <Col xs={12} md={10} xl={10}>
+                    <span className="tagline">Welcome to my Portfolio!</span>
+                </Row>
+                <Row className="align-items-center">
+                    <Col xs={12} md={3} xl={3}>
+                        <div className="banner-img">
+                            <img src={imagePaths.profile} alt="Angel Garfias" />
+                        </div>
+                    </Col>
+                    <Col xs={12} md={9} xl={9} className="mb-5">
                         <h1>{`Hi I'm Angel `}<span className="wrap">{text}</span><span className={showCursor ? 'cursor' : 'cursor-hidden'}>|</span></h1>
                         <TrackVisibility>
                             {({ isVisible }) =>
@@ -69,13 +76,8 @@ export const Banner = () => {
                                 </div>
                             }
                         </TrackVisibility>
+                        <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="banner-link">Let's Connect<ArrowRightCircleFill size={25} /></a>
                     </Col>
-                    <Col xs={12} md={2} xl={2}>
-                        <div className="banner-img">
-                            <img src={imagePaths.profile} alt="Angel Garfias" />
-                        </div>
-                    </Col>
-                    <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="banner-link">Let's Connect<ArrowRightCircleFill size={25} /></a>
                 </Row>
             </Container>
             <img className="background-image-banner" src={imagePaths.android} alt="Android Logo" />

@@ -484,12 +484,11 @@ nav.navbar .navbar-toggler-icon:after {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
-  padding: 20px 0 0 0;
+  padding: 1.5rem 0;
 }
 
 .banner-link {
   width: fit-content !important;
-  margin: 50px auto !important;
   font-family: "Monospace", monospace;
   font-weight: bold;
   color: var(--on-primary-container);
@@ -513,31 +512,15 @@ nav.navbar .navbar-toggler-icon:after {
 
 .banner-img {
   width: 100%;
-  max-width: 200px;
   height: auto;
   border-radius: 50%;
   overflow: hidden;
-  animation: updown 3s linear infinite;
   margin: 0 auto;
 }
 
 .banner-img img {
   display: block;
   width: 100%;
-}
-
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  50% {
-    transform: translateY(20px);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
 }
 
 .txt-rotate>.wrap {
@@ -575,6 +558,11 @@ nav.navbar .navbar-toggler-icon:after {
     top: 25vh;
     right: 0vw;
   }
+
+  .banner-img {
+    margin-bottom: 2rem !important;
+    max-width: 256px;
+  }
 }
 
 /* #endregion */
@@ -601,12 +589,12 @@ nav.navbar .navbar-toggler-icon:after {
   font-size: 1.125rem;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px 0 75px 0;
+  margin: 1rem 0;
 }
 
 .skill-slider {
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   position: relative;
   cursor: grab;
 }
@@ -690,12 +678,13 @@ nav.navbar .navbar-toggler-icon:after {
 }
 
 .career h2 {
-  padding: 50px 0 50px 0;
+  padding: 50px 0 0 0;
   font-size: 3rem;
   text-align: center;
 }
 
 .career p {
+  font-size: 1.125rem;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
@@ -794,7 +783,7 @@ nav.navbar .navbar-toggler-icon:after {
 .proj-imgbx::before {
   content: "";
   background: var(--primary-container);
-  opacity: 0.75;
+  opacity: 0.85;
   position: absolute;
   width: 100%;
   height: 0;

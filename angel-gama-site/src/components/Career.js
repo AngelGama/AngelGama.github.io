@@ -20,67 +20,67 @@ export const Career = () => {
     const projects = [
         {
             title: "Portfolio",
-            description: "Design & development",
+            description: "Created using React.js to showcase my web development work and skills.",
             imgUrl: projectsPaths.portfolio,
         },
         {
             title: "Machine Learning Car",
-            description: "Design & development",
+            description: "Developed in Unity, it's an implementation of a custom TensorFlow Lite model that autonomously navigates a maze using three sensors.",
             imgUrl: projectsPaths.mlcar,
         },
         {
             title: "Car Driving Simulator",
-            description: "Design & development",
+            description: "A Unity project designed to train various driving skills and enhance expertise.",
             imgUrl: projectsPaths.secben,
         },
         {
             title: "Procedural Lightning Generator",
-            description: "Design & development",
+            description: "A 2D Unity project that generates storms with up to five different types of lightning using procedural generation.",
             imgUrl: projectsPaths.lightningpg,
             link: "https://github.com/AngelGama/UnityLightnings"
         },
         {
             title: "Cinematic Lightning Study",
-            description: "Design & development",
+            description: "An implementation of basic lighting concepts in Unity to enhance visual effects.",
             imgUrl: projectsPaths.lightningstudy,
             link: "https://play.unity.com/mg/other/cinematic-lighting-study-challenge"
         },
         {
             title: "Pachinko Challenge",
-            description: "Design & development",
+            description: "A Unity project that is a simple pachinko game applying the basics of 2D physics.",
             imgUrl: projectsPaths.packinko,
             link: "https://play.unity.com/mg/other/pachinkobuild-33"
         },
         {
             title: "Floor Is Lava",
-            description: "Design & development",
+            description: "Similar to Pachinko but with 3D physics, this Unity project challenges a ball to avoid a lava floor.",
             imgUrl: projectsPaths.floorislava,
             link: "https://play.unity.com/mg/other/floorislavabuild-57"
         },
         {
             title: "Essentials 3D Audio",
-            description: "Design & development",
+            description: "Developed in Unity, this project showcases the implementation of 3D audio for a more immersive experience.",
             imgUrl: projectsPaths.audio3d,
             link: "https://play.unity.com/mg/other/essentials-3d-audio"
         },
         {
             title: "Still Life Challenge",
-            description: "Design & development",
+            description: "A Unity project focusing on rendering and shaders to create complex materials like steel, glass, bricks & shaders with futuristic effects",
             imgUrl: projectsPaths.stilllife,
         },
         {
             title: "Business Card",
-            description: "Design & development with Jetpack Compose",
+            description: "Built with Android Jetpack Compose, it serves as my digital business card, demonstrating my Android app development skills.",
             imgUrl: projectsPaths.businessCard,
         },
         {
             title: "Tip Calculator",
-            description: "Design & development",
+            description: "A simple Android app for calculating tips, showcasing my Android app development capabilities.",
             imgUrl: projectsPaths.tiptime,
         },
         {
             title: "Games Database",
-            description: "Design & development",
+            description: "An Android app that interfaces with a Games API to display a list of popular games and allows users to add custom games to the database using SQLite. Demonstrates my Android development and database skills.",
             imgUrl: projectsPaths.games,
         },
     ];
@@ -212,7 +212,7 @@ export const Career = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__headShake" : ""}>
                                     <h2>Career</h2>
-                                    <p>Currently working on this, coming soon! 😄 </p>
+                                    <p>Welcome to my career section where I showcase my professional journey, projects, and qualifications. Explore the tabs below to learn more about my experiences, skills, and education. 🚀 </p>
                                 </div>
                             }
                         </TrackVisibility>
@@ -230,7 +230,6 @@ export const Career = () => {
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
-                                    <p>🚧 Disclaimer: Under Construction! 🛠️</p>
                                     <Row className="projects-row">
                                         {
                                             projects.map((project, index) => {

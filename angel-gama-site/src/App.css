@@ -200,7 +200,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link::after {
   background-color: var(--primary);
 }
 
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover::after {
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover::after,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -571,6 +572,7 @@ nav.navbar .navbar-toggler-icon:after {
 
 .skill {
   margin: var(--small-margin) var(--big-margin);
+  padding-top: 50px;
 }
 
 .col {
@@ -673,7 +675,6 @@ nav.navbar .navbar-toggler-icon:after {
 /* #region Career Tab Section */
 
 .career {
-  margin: var (var(--small-margin)) var(--big-margin);
   position: relative;
 }
 

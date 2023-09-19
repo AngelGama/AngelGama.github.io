@@ -12,6 +12,8 @@ import school from '../assets/img/schoolicon.svg';
 import starticon from '../assets/img/starticon.svg';
 import csicon from '../assets/img/csicon.svg';
 import vricon from '../assets/img/vricon.svg';
+import ipn from '../assets/img/ipnlogo.svg';
+import fcs from '../assets/img/cptlogo.jpg';
 
 /* Projects */
 import portfolio from '../assets/img/projects/Portfolio.jpg';
@@ -41,8 +43,8 @@ export const imagePaths = {
     starticon: starticon,
     csicon: csicon,
     vricon: vricon,
-    ipn: "https://www.ipn.mx/assets/files/main/img/template/logo_ipn_guinda.svg",
-    fcs: "https://capacitateparaelempleo.org/assets/images/logocpe.jpeg",
+    ipn: ipn,
+    fcs: fcs,
 };
 
 export const projectsPaths = {

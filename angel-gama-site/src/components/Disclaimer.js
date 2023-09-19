@@ -23,7 +23,7 @@ export const Disclaimer = () => {
 
     return (
         <div className={`disclaimer${showDisclaimer ? '' : ' accepted'}`}>
-            <button className="close-button" onClick={handleCloseDisclaimer}>
+            <button type="button" className="close-button" onClick={handleCloseDisclaimer} aria-label="Close">
                 &times;
             </button>
             <p className="disclaimer-tittle">🚧 This website is under construction 🛠️</p>

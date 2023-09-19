@@ -107,7 +107,7 @@ export const NavBar = () => {
                     </span>
                 </Navbar.Collapse>
             </Container>
-            <button type="button" className={`back-to-top-button ${scrolled ? 'scrolled' : ''}`} onClick={scrollToTop} ><ChevronBarUp /></button>
+            <button type="button" className={`back-to-top-button ${scrolled ? 'scrolled' : ''}`} onClick={scrollToTop} aria-label="Scroll to Top"><ChevronBarUp /></button>
         </Navbar>
     );
 }

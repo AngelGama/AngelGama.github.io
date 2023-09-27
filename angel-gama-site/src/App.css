@@ -280,7 +280,6 @@ span.navbar-toggle {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: var(--scrim);
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
@@ -295,7 +294,6 @@ span.navbar-toggle {
   width: 42px;
   height: 42px;
   position: absolute;
-  background: var(--primary-container);
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -305,14 +303,12 @@ span.navbar-toggle {
   transform: scale(1);
 }
 
-.social-icon a img {
-  width: 40%;
-  z-index: 1;
-  transition: 0.3s ease-in-out;
+.social-icon a:hover {
+  background-color: var(--primary-container);
 }
 
-.social-icon a:hover img {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(100%) contrast(100%);
+.social-icon svg:hover {
+  fill: var(--on-primary-container);
 }
 
 nav.navbar .navbar-toggler {
@@ -800,6 +796,7 @@ nav.navbar .navbar-toggler-icon:after {
 .proj-txtx {
   position: absolute;
   text-align: center;
+  padding: 0 20px;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);

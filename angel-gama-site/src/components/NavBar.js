@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { imagePaths } from '../constants/imagePaths';
 import { socialLinks } from '../constants/socialLinks';
 import { Toggle } from './Toggle';
-import { ChevronBarUp } from 'react-bootstrap-icons';
+import { Android, ChevronBarUp, Github, Linkedin } from 'react-bootstrap-icons';
 
 export const NavBar = () => {
 
@@ -100,9 +100,9 @@ export const NavBar = () => {
                     </span>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer"><img src={imagePaths.inlogo} alt="LinkedIn" /></a>
-                            <a href={socialLinks.github} target="_blank" rel="noopener noreferrer"><img src={imagePaths.ghlogo} alt="GitHub" /></a>
-                            <a href={socialLinks.gdev} target="_blank" rel="noopener noreferrer"><img src={imagePaths.gdlogo} alt="Google Developer Profile" /></a>
+                            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin color="var(--on-background)" aria-description="LinkedIn" /></a>
+                            <a href={socialLinks.github} target="_blank" rel="noopener noreferrer"><Github color="var(--on-background)" aria-description="GitHub" /></a>
+                            <a href={socialLinks.gdev} target="_blank" rel="noopener noreferrer"><Android color="var(--on-background)" aria-description="Google Developers" /></a>
                         </div>
                     </span>
                 </Navbar.Collapse>

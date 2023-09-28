@@ -25,7 +25,7 @@ import audio3d from '../assets/img/projects/Essentials3daudio.jpg';
 import lightningstudy from '../assets/img/projects/CinematicLightningStudy.jpg';
 import businessCard from '../assets/img/projects/BusinessCard.jpg';
 import lightningpg from '../assets/img/projects/lightningprocedural.jpg';
-import tiptime from '../assets/img/projects/TipTime.jpg';
+import pokedex from '../assets/img/projects/Pokedex.jpg';
 import games from '../assets/img/projects/DataBaseGames.jpg';
 
 export const imagePaths = {
@@ -56,6 +56,6 @@ export const projectsPaths = {
     mlcar: mlcar,
     secben: secben,
     lightningpg: lightningpg,
-    tiptime: tiptime,
+    pokedex: pokedex,
     games: games,
 };

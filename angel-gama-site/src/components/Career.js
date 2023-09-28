@@ -74,9 +74,10 @@ export const Career = () => {
             imgUrl: projectsPaths.businessCard,
         },
         {
-            title: "Tip Calculator",
-            description: "A simple Android app for calculating tips, showcasing my Android app development capabilities.",
-            imgUrl: projectsPaths.tiptime,
+            title: "Pokedex",
+            description: "Crafted with Jetpack Compose, it embodies the MVVM architecture for clean, modular code. Featuring seamless dependency injection with Dagger Hilt, this app is your gateway to Pokemon information, powered by real-time data from pokeapi.co.",
+            imgUrl: projectsPaths.pokedex,
+            link: "https://github.com/AngelGama/ComposePokedex"
         },
         {
             title: "Games Database",
